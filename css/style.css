@@ -26,7 +26,7 @@ h1, p {
     background-size: 100%;
     background-position: top;
     background-repeat: no-repeat;
-    min-height: 100vh;
+    min-height: 900px;
 }
 
 .container{
@@ -293,7 +293,7 @@ h1, p {
     display: flex;
     justify-content: center;
     gap: 30px;
-    padding: auto;
+    
 }
 .ModernSpace h1{
     margin-top: 15px;
@@ -535,4 +535,215 @@ h1, p {
     margin: 0 auto;
     text-align: center;
     padding: 30px;
+}
+
+
+/* MEDIA QUERY --------------------------------------*/
+@media (max-width: 768px) {
+    .HomePage-Background{
+        min-height: 300px;
+    }
+    .container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        order: 1;
+    }
+
+    .navbar-option{
+        padding: 30px 15px;
+        color: #FCFCFC;
+        font-family: 'Poppins', sans-serif;
+        font-size: 13px;
+    }
+
+    .rightMenu{
+        background-image: url(../images/icon-burguer.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        order: 2;
+        padding: none;
+        margin: none;
+        background-size: contain;
+    }
+
+    .leftMenu{
+        order: -1;
+        padding: 0px;
+        margin: 0px;
+    }
+    .MiddlePage{
+
+        flex-direction: column;
+    }
+    .MiddlePage img{
+
+        max-width: 400px;
+        max-height: 400px;
+    }
+    .Residential{
+        flex-direction: column;
+        gap: 80px;
+    }
+
+
+    .FindCommunity{
+    background-image: url(../images/findcommunity.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 60px 40px;
+    text-align: center;
+    
+}
+
+.FindCommunity h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #FCFCFC;
+    /* margin-bottom: 40px;*/
+}
+
+.FindCommunity h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    color: #FCFCFC;
+}
+
+.FindCommunity-Options{
+    display: flex;
+    font-size: small;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 70%;
+    max-width: 1040px;
+    height: 100%;
+    /* max-height: 477px; */
+    background-color: white;
+    border-radius: 10px;
+    padding: 10%;
+}
+.FindCommunity-Email{
+    display: flex;
+    align-items: center;
+    border-radius: 59px;
+    width: 100%;
+    justify-content: space-between;
+    background-color: white;
+    max-width: 700px;
+}
+.Email-text{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #5E5E5E;
+    margin-left: 30px;
+}
+.Email-Subscribe{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    border-radius: 59px;
+    background-color: #222222;
+    color: #FCFCFC;
+    height: 65px;
+    width: 168px;
+    margin: 5px;
+}
+.ComboBox{
+    display: flex;
+
+    padding: 6% 4%;
+
+    width: 200px;
+    background-color: #ccc;
+    border-radius: 10px;
+    border-color: #1E1E1E;
+    border-width: 3px;
+    
+}
+.ComboBox2{
+    display: flex;
+    padding-right: 20px;
+    width: 200px;
+}
+.ComboBox-Text{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    font-size: small;
+}
+.ComboBox-Text1{
+    font-family: 'Poppins', sans-serif;
+    
+    font-weight: 100;
+    color: #1E1E1E;
+    font-size: small;
+}
+.ComboBox-Text2{
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+    font-weight: 100;
+    color: #5E5E5E;
+}
+.ComboBox-Icon{
+    position: relative;
+    top: 40px;
+    left: 50px;
+    opacity: 0;
+}
+.FindCommunity-Search-Button{
+    display: flex;
+    border-radius: 10px;
+    background-color: #222222;
+    align-items: center;
+    gap: 0px;
+    width: 200px;
+    height: 50px;
+}
+.Search-Text{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    color: #FCFCFC;
+}
+.ModernSpace {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 0px;
+    min-width: 70%;
+}
+.ModernSpace p{
+    width: 100%;
+    text-align: justify;
+}
+.YearsContainer{
+    flex-direction: column;
+    gap: 80px;
+}
+.Tf_Container{
+    flex-direction: column;
+}
+.Tf_Houses{
+    flex-direction: column;
+}
+.MS_Container{
+    max-width: 70%;
+    margin: 0 auto;
+}
 }
